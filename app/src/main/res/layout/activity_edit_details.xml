@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arieluniversity.loginbank.EditDetails"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:layoutDirection="rtl"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/hello_user"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+                android:text=""
+                android:textSize="30sp"
+                android:visibility="invisible"
+                />
+            <Button
+                android:id="@+id/Back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:text="חזרה לתפריט ראשי"
+                android:onClick="BackBtnClick"
+                />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="visible"
+        android:textDirection="rtl"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="120dp"
+            android:maxHeight="70dp"
+            android:maxWidth="120dp"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+
+            android:adjustViewBounds="true"
+            android:layout_weight="1"></ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:id="@+id/buttonLoadPicture"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            android:text="Load Picture"
+            android:textSize="9sp"
+            android:onClick="LoadPictureClick"
+            />
+        <Button
+            android:id="@+id/buttonTakePicture"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            android:text="Take Picture"
+            android:textSize="7sp"
+            android:onClick="TakePictureClick"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Edit_Users"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_weight="0"
+        android:text="ערוך משתמשים"
+        android:textSize="9sp"
+        android:visibility="invisible"
+        android:onClick="Edit_Users_OnClick"
+        />
+
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/adress_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="כתובת   " />
+
+            <EditText
+                android:id="@+id/adress_real"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:focusable="true"
+
+                android:enabled="false"
+                android:text="הארז 9" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/email_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="   Email" />
+
+            <EditText
+                android:id="@+id/email_real"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:enabled="false"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/city_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="עיר   " />
+
+            <EditText
+                android:id="@+id/city_real"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:focusable="true"
+                android:enabled="false"
+                android:text="רעננה" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:id="@+id/verificationQ_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="שאלת הזדהות   "
+                android:textSize="13dp"
+                />
+                <EditText
+                    android:id="@+id/verificationQ_tagHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="שם הנעורים של אמך"
+                    android:enabled="false"
+                    android:textSize="9dp"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/verificationQ_real"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:enabled="false"
+                android:text="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/editDetails_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ערוך פרטים"
+            android:onClick="EditDetailsClick"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:text=""
+            android:visibility="invisible"
+            android:textSize="13dp"
+            />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/adminMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="עבור לתפריטים עם הרשאות"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:onClick="getToAdminClick"
+            />
+        <Button
+            android:id="@+id/OtherCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="עבור לתפריט מטח"
+            android:onClick="GotoCoins"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/Maps_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="עבור למפה"
+            android:onClick="getToMapClick"
+            />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+

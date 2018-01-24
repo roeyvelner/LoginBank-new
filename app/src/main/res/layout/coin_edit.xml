@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/Coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="מטח - "
+        android:textSize="30sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_gravity="center"
+
+        />
+    <ListView
+        android:id="@+id/listMashcanta2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:visibility="gone"
+        android:background="@android:color/holo_blue_bright"
+
+        />
+    <TextView
+        android:id="@+id/order_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="כעת ניתן לערוך את שער המטבע הנבחר"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_gravity="center"
+
+        />
+    <EditText
+        android:id="@+id/Edit_text_coin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="הכנס ספרות בלבד"
+
+        />
+    <EditText
+        android:id="@+id/for_mashcanta_add"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        android:hint="הכנס סכום תשלום ראשוני"
+
+        />
+    <Button
+        android:id="@+id/NotifyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שמור ערך המטבע"
+        android:onClick="NotifyBtn_onClick"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context="arieluniversity.loginbank.MangerMain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="משכנתאות - לקוחות"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40dp"
+
+
+                />
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="לחץ לעריכת סכומי המשכנתא"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12dp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:visibility="invisible"
+                />
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="להוספת משכנתא למשתמש"
+                android:textSize="10dp"
+                android:onClick="addMashcanta"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:visibility="invisible"
+                />
+
+
+            <ListView
+                android:id="@+id/listMashcanta"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@android:color/holo_blue_bright"
+
+                />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@android:color/darker_gray"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/manager"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="אפשרויות מנהל נוספות"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:visibility="invisible"
+                />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="למעבר לנתינת הרשאות משתמשים"
+        android:onClick="PermissionClick"
+        />
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="לעריכת שערי מטבעות"
+        android:onClick="Coinclick"
+        />
+        </LinearLayout>
+    </ScrollView>
+</android.widget.LinearLayout>
